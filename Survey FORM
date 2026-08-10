@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Sara's Survey Form</h1>
+
+<p id="description">Thanks for taking the time to participate in this survey</p>
+
+<form id="survey-form">
+  <label id="name-label" for="Name">Name</label>
+  <input id="name" type="text" required placeholder="Full Name"/>
+
+  <label id="email-label" for="email">Enter your Email</label>
+  <input id="email" type="email" required placeholder="Email Address"/>
+
+  <label id="number-label" for="number">Enter your mobile number</label>
+  <input id="number" type="number" min="4" max ="30" optional placeholder="Contact Number" />
+
+  <label for="dropdown">Select option</label>
+  <select id="dropdown">
+    <option value="option1">Yes</option>
+    <option value="option2">No</option>
+    </select>
+
+<fieldset>
+  <legend>Are you going to refer us to your friends?</legend>
+  <input id="yes-option" type="radio" name="name" value="yes" />
+  <label for="yes-option">Yes</label>
+
+  <input id="no-option" type="radio" name="name" value="no" />
+  <label for="no-option">Never</label>
+
+  <fieldset>
+    <legend>How many times a week do you visit our shop?</legend>
+    <input
+    type="checkbox"
+    id="how-many" 
+    name="choose"
+    value="choose1" />
+    <label for="choose1">Once a week </label>
+
+    <input
+    type="checkbox"
+    id="how-many"
+    name="choose2"
+    value="choose2"
+    />
+    <label for="choose2">Three times a week</label>
+</fieldset>
+
+<label for="textarea">Leave your comments</label>
+<textarea id="comments"
+    cols="50"
+    rows="10"
+    name="comments">
+    </textarea>
+
+    <button id="submit">Submit</button>
+
+</form>
+  </body>
+</html>
