@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Card</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<div class="blog-post-card">
+    <img class="post-img" src="https://cdn.freecodecamp.org/curriculum/labs/cover-photo.jpg". alt="working computer"/>
+
+    <div class="post-content">
+       <h2 class="post-title">Sara's Blog </h2> 
+       <p class="post-excerpt">Yumi's Beautiful Life</p>
+       <a class="read-more">Read More</a>
+        </div>
+        </div>
+</body>
+</html>
+
+
+/*CSS*/
+.blog-post-card {
+  background: white;
+  border-radius: 24px;
+  width: 200px;
+  text-align: center;
+}
+
+.post-img {
+  width: 100%;
+  border-bottom: solid;
+}
+
+.post-content {
+  padding: 24px;
+}
+
+.post-title, .post-excerpt {
+  color: purple;
+}
+
+.read-more {
+  color: purple;
+  background-color: pink;
+  margin: 8px;
+  padding: 16px;
+  border-radius: 8px;
+  display: inline-block;
+}
+.read-more:hover {
+background-color: blue;
+}
