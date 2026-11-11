@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Styled To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<ul class="todo-list">
+   <li>
+    <input type="checkbox" id="coffee-1">
+    <label for="coffee-1">Coffee</label>
+    <ul class="sub-item">
+    <li>
+    <a class="sub-item-link" href="/" target="_blank">Ingredients</a>
+    </li>
+    </ul>
+    </li>
+
+    <li class="sub-item">
+    <input type="checkbox" id="milk-2">
+    <label for="milk-2">Milk</label>
+
+    <ul class ="sub-item">
+        <li>
+            <a class="sub-item-link" href="/" target="_blank">Ingredients</a>
+    </li>
+    </ul>
+    </li>
+
+    <li class="sub-item">
+        <input type="checkbox" id="butter-3">
+        <label for="butter-3">Butter</label>
+        <ul class ="sub-item">
+            <li>
+                <a class="sub-item-link" href="/" target="_blank">Buy here</a>
+                </ul>
+        </li>
+</li>
+        
+        <li class="sub-item">
+        <input type="checkbox" id="onion-4">
+            <label for="onion-4">Onion</label>
+           <ul class ="sub-item">
+            <li>
+            <a class="sub-item-link" href="/" target ="_blank">Buy here</a>
+             </ul>
+            </li>
+            </li>
+           
+</body>
+
+</html>
+
+
+/**CSS**/
+a {
+  text-decoration: none;
+  color: blue;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: pink;
+}
+
+a:focus {
+  outline: 2px solid green;
+}
+
+a:active {
+  color: orange;
+}
+
+a:link {
+  color: blue;
+}
