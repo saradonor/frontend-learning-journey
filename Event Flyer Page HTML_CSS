@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Build an Event Flyer Page</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+  <header>
+    <img src="https://cdn.freecodecamp.org/curriculum/labs/event.jpg" alt="confetti">
+<h1>Yumi's One Night Show!</h1>
+</header>
+<main>
+  <section>
+<h2>Get ready for a special night filled with entertainment!</h2>
+</section>
+<section>
+  <h2>Date: Saturday, 21 November 2026, Time: 7:00 PM to 10:00 PM</h2>
+</section>
+<hr>
+</main>
+
+</header>
+</body>
+
+</html>
+
+/**CSS**/
+body {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80vw;
+  min-height: calc(100vh - 100px);
+}
+
+hr {
+  width: 100%;
+}
+
+section {
+  width: 300%;
+}
