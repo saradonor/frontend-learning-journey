@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<div class="container">
+    <form>
+        <label for="name">Full Name</label>
+        <input type="text" id="name">
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email">
+
+        <label for="position">Job Position</label>
+        <select id="position">
+            <option value="">Select a Job Position</option>
+            <option value="manager">Manager</option>
+            <option value="designer">UX Designer</option>
+            <option value="marketing">Marketing</option>
+        </select>
+
+        <fieldset class="radio-group">
+            <legend>Availability</legend>
+
+            <input type="radio" id="fulltime" name="availability" value="fulltime">
+            <label for="fulltime">Full Time</label>
+
+            <input type="radio" id="parttime" name="availability" value="parttime">
+            <label for="parttime">Part Time</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Enter your message</legend>
+
+            <label for="message">Write your message here</label>
+            <textarea id="message" rows="4" cols="30"></textarea>
+        </fieldset>
+        <button type="submit">Submit Form</button>
+
+    </form>
+</div>
+</body>
+</html>
+
+
+/**CSS**/
+input:invalid, select:invalid, textarea:invalid {
+border-color: red;
+}
+
+input:valid, select:valid, textarea:valid {
+border-color: green;
+}
+
+input:focus, textarea:focus {
+  border: 2px solid blue;
+  outline: none;
+}
+
+button:hover {
+background-color: pink;
+}
+
+.radio-group input[type="radio"]:checked {
+  border-color: purple;
+  background-color: pink;
+  box-shadow: 0 0 5px magenta;
+}
+
+input[type="radio"]:checked + label {
+  color: green;
+}
+
+input:first-of-type {
+  border-radius: 10px;
+}
