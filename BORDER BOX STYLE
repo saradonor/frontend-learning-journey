@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confidential Email</title>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+<main id="email">
+  <div id="confidential">CONFIDENTIAL</div>
+  <div id="top-secret">TOP SECRET</div>
+  <p>
+    <span class="blurred">Confidential</span>
+  All information shared within this project is confidential and should be treated with care</p>
+  <p>
+    <span class="blurred">Top</span>
+  It should only be accessed and used by authorised individuals for the purposes of the project.</p>
+  <p>
+    <span class="blurred">Secret</span>Please ensure that all confidential information is stored securely and handled responsibly throughout the project and after its completion.
+  </p>
+</main>
+</body>
+
+</html>
+
+CSS**
+#email {
+  padding: 50px;
+  margin-top: 50px;
+  width: 500px;
+  border: 2px;
+  box-sizing: border-box;
+}
+
+#confidential, #top-secret {
+  display: inline-block;
+  padding: 14px;
+  margin-left: 14px;
+  border: solid 2px;
+  transform: rotate(-0.3deg);
+}
+
+.blurred {
+  filter: blur(3px);
+}
