@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Book Inventory</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<h1>Book Inventory</h1>
+<table>
+  <thead>
+    <tr>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Category</th>
+    <th>Status</th>
+    <th>Rate</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr class="to-read">
+    <td>The Three Musketeers</td>
+    <td>Alexandre Dumas</td>
+    <td>Historical Novel</td>
+    <td><span class="status">To Read</span></td>
+    <td><span class="rate two">4 Stars
+    <span></span>
+    <span></span>
+    <span></span>
+    </span>
+    </td>
+    </tr>
+    <tr class="read">
+    <td>From</td>
+    <td>Yumi Donor</td>
+    <td>Horror</td>
+    <td> <span class="status">Read</span></td>
+    <td><span class="rate one">1 Star
+    <span></span>
+    <span></span>
+    <span></span>
+    </span>
+    </td>
+    </tr>
+    <tr class="in-progress">
+    <td>angako Sayo</td>
+    <td>Sharon Cuneta</td>
+    <td>Love Story</td>
+    <td><span class="status">In Progress</span></td>
+    <td><span class="rate" class="three">3 Stars
+    <span></span>
+    <span></span>
+    <span></span>
+    </span>
+    </td>
+    </tr>
+    <tr class="to-read">
+    <td>Yumi's Diary</td>
+    <td>Sara D.</td>
+    <td>Science Fiction</td>
+    <td><span class="status">To Read</span></td>
+    <td><span class="rate">5 Stars
+    <span></span>
+    <span></span>
+    <span></span>
+    </span>
+    </td>
+    </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
+
+/*CSS*
+tr[class="read"] {
+background-image: linear-gradient(to right, green, teal, blue);
+}
+
+tr[class="to-read"] {
+background-image: linear-gradient(to right, pink, magenta, brown);
+}
+
+tr[class="in-progress"] {
+  background-image: linear-gradient(to right, violet, blue, green);
+}
+
+span {
+  display: inline-block;
+}
+
+tr[class="to-read"] span[class="status"] {
+  border: 2px solid green;
+  background-image: linear-gradient(to right, pink, purple, yellow);
+}
+
+tr[class="read"] span[class="status"] {
+  border: black;
+  background-image: linear-gradient(to right, blue, blue, green);
+}
+
+tr[class="in-progress"] span[class="status"] {
+  border: black;
+  background-image: linear-gradient(to right, red, blue, red);
+}
+
+span[class="status"], span[class^="rate"] {
+  border: 2px solid pink;
+  border-radius: 4px;
+  margin: 6px;
+  height: 24px;
+  width: 48px;
+  background-color: white;
+  padding: 20px;
+}
+
+span[class~="one"] > span:first-child {
+  background-image: linear-gradient(to right, violet, red, black);
+}
+
+span[class~="two"] > span:nth-child(-n+2) {
+  background-image: linear-gradient(to right, pink, yellow, red, yellow);
+  }
+
+  span[class~="three"] span {
+  background-image: linear-gradient(to right,white, yellow, red, blue);
+  }
+
+
+span[class^="rate"] > span {
+height: 16px;
+width: 24px;
+padding: 2px;
+border-radius: 4px;
+border: 2px solid magenta;
+margin: 2px;
+background-color: yellow;
+}
+
